@@ -1,0 +1,15 @@
+<%- include('template.ejs') %>
+<div class="divclass" style="border: 2px solid grey;" >
+    <h4><%= dataBase.title %></h4>
+    <p><%=dataBase.date%></p>
+    <p class="pclass"><%= dataBase.description %></p>
+    <div>
+        <form action="/" method="get">
+        <button  style="background-color: blue; color: white;">All Articles</button>
+    </form>
+    <form action="/editBlog" method="post">
+        <button style="background-color :cadetblue; color: white;">Edit</button>
+    </form>
+    </div>
+
+</div>
